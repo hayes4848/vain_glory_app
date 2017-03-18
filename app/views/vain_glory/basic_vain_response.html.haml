@@ -1,0 +1,21 @@
+%h1 hello
+
+%ul
+  - @results.data.each do |player|
+    %li
+      %strong ID:
+      %span= player.id
+      %br
+      %strong Name:
+      %span= player.attributes.name
+      %br
+      %strong Lifetime Gold:
+      %span= player.attributes.stats.lifetimeGold
+      %br
+      %strong Win Streak:
+      %span= player.attributes.stats.winStreak
+      %br
+      %strong Loss Streak:
+      %span= player.attributes.stats.lossStreak
+      %br
+
