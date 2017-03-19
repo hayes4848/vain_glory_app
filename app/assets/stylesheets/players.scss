@@ -1,3 +1,11 @@
 // Place all the styles related to the Players controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.player-card {
+  border: 1px solid #e2e2e2;
+  margin-top: 20px;
+  padding: 20px;
+}
+.sort-btn {
+  margin-right: 5px
+}

@@ -1,21 +1,6 @@
-%h1 VainGlory Players
-
-%ul
-  - @results.data.each do |player|
-    %li
-      %strong ID:
-      %span= player.id
-      %br
-      %strong Name:
-      %span= player.attributes.name
-      %br
-      %strong Lifetime Gold:
-      %span= player.attributes.stats.lifetimeGold
-      %br
-      %strong Win Streak:
-      %span= player.attributes.stats.winStreak
-      %br
-      %strong Loss Streak:
-      %span= player.attributes.stats.lossStreak
-      %br
-
+.container
+  .row
+    .col-sm-12
+      %h1 VainGlory Players
+      %canvas{id: "myChart", width: "400", height: "400"}
+      = react_component('PlayerList', {players: @players})
